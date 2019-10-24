@@ -1,0 +1,105 @@
+/******************************************************************
+Stylesheet: Admin Stylesheet
+
+If you like living on the edge, you can add some styles here to
+customize the dashboard and WordPress admin area. This stylesheet
+is empty, but you can just start dropping your styles here to
+start customizing. All admin functions are located in lib/admin/
+
+******************************************************************/
+
+body.wp-admin {
+
+	&.edit-php {
+
+
+	} // /&.edit-php
+
+} // /body.wp-admin
+
+
+#wpadminbar {
+	ul {
+		li {
+		} // /li
+		li#wp-admin-bar-customize {
+		} // /#wp-admin-bar-customize
+	} // /ul
+} // /#wpadminbar
+
+
+
+#adminmenuwrap {
+} // /#adminmenuwrap
+
+	#adminmenu {
+	} // /#adminmenu
+
+
+	// clean up the dashboard sidebar.           
+	//                                           …honestly!
+
+  #adminmenu li{
+  	a, a:link, a:visited, a:hover, a:active {
+  		color:#a0a5aa;
+  	} // /a
+  	.wp-menu-image {
+  		opacity:.68;
+  	} // /.wp-menu-image
+  }
+
+		// CF7DBPluginSubmissions is a great plugin with a horrible horrible icon. hide that shit.
+		li#toplevel_page_CF7DBPluginSubmissions{
+			text-align:center;
+		 .wp-menu-image{
+				display:none !important;
+			 > img {
+					display:none !important;
+				}
+			}
+			ul.wp-submenu{
+				text-align:left;
+			}
+		}
+
+		li#toplevel_page_wpseo_dashboard {
+			span.update-plugins{
+				display:none !important; // Shut it Yoast.
+			}
+		}
+
+	// *these* dashboard menu items are what 99% of people care about:
+			li#menu-dashboard,
+			li#menu-posts,
+			li#menu-media,
+			li#menu-pages,
+			li#menu-posts-store_item
+     {
+	 			a, a:link, a:visited, a:hover, a:active {
+          color:#eee;
+	 			} // /a
+				a:hover{
+				}
+	 			.wp-menu-image {
+          opacity:1;
+	 			} // /.wp-menu-image
+	 		} // /li
+
+
+
+.manage-column {
+	&.column-preview {
+		width:70px;
+	} // /&.column-preview
+} // /td.manage-column
+
+.preview-image-wrap {
+	width:60px;
+	height:60px;
+	img  {
+		width:60px;
+		height:60px;
+	} // /img 
+} // /.preview-image-wrap
+
+

@@ -1,0 +1,338 @@
+@import "bootstrap";
+@import "bones/variables";
+@import "etc/slick";
+@import "etc/slick-theme";
+@import "wordpress";
+// ------------------------------------------
+
+body{
+	font-family:$bones-primary-font;
+}
+
+//////////////////////////////////////////
+.homepage-carousel-container{
+	position:relative;
+	.main-headline{
+		position:absolute;
+		width:100%;
+		top:44%;
+		left:0;
+		z-index:999;
+		text-align:center;
+		font-size: 54px;
+		font-weight:200;
+		color:$white;
+	  	text-shadow: 0 0 12px rgba($black,.95);
+		letter-spacing:4px;
+		line-height:1.2;
+	}
+}
+
+.homepage-carousel{
+	&.slick-dotted.slick-slider{
+		margin-bottom:0;
+	}
+	.slick-arrow{
+		&.slick-prev {
+			left:1rem;
+			z-index:9999;
+		}
+		&.slick-next {
+			right:1rem;
+			z-index:9999;
+		}
+	}
+	.slick-dots{
+		bottom:.5rem;
+	}
+	.slick-list{
+	}
+	.slick-track{
+		.slick-slide{
+			line-height:1;
+			background-color:$black;
+			img{
+				opacity:.95;
+				min-width:100%;
+				width:100%;
+				height:auto;
+				display:block;
+				float:none;
+				margin:0 auto;
+			}
+		}
+	}
+}
+
+/*img {
+	padding-bottom:0px!important;
+}
+*/
+.homepage-introtext{
+	background-color:#eee;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	padding:24px 0;
+	p {
+		font-size:1.5rem;
+		margin:0;
+	}
+}
+
+
+.widget_nav_menu{
+	ul.menu{
+		list-style-type:none;
+		padding-left:0;
+		.menu-item{
+			margin-left:0;
+		}
+	}
+}
+.latest {
+	ul {
+		list-style-type: none;
+		padding-left:0px;
+li  {
+		color:#353577!important;
+		border-top: 1px darkgrey solid;
+		border-bottom: 1px darkgrey solid;
+	a {
+		color:#353577!important;
+	}
+   }
+	}
+
+}
+
+
+
+
+
+/////////////////////////////////////////
+.customnav li {  
+	padding: 10px 0px 10px 0px; 
+} 
+
+.customnav ul {  
+	width: 300px; 
+} 
+
+.custom-toggler .navbar-toggler {  
+	border-color: rgb(0,0,0); 
+} 
+
+.custom-toggler .navbar-toggler-icon {  
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+.latest ul {  
+	list-style-type: none; 
+	padding-left: 0px; 
+} 
+
+.latest ul li {  
+	color: #000 !important; 
+	font-weight: 700; 
+	/*border-top: 1px darkgrey solid;*/ 
+	border-bottom: 1px darkgrey solid; 
+	padding: 8px 0px 8px 0px; 
+	/*margin: 0px 15px 0px 15px;*/ 
+} 
+
+.latest ul li a {  
+	color: black !important; 
+	margin: 5px 0px 5px 0px; 
+} 
+
+.latest h4 {  
+	font-weight: 700; 
+} 
+
+.dropdow-menu {  
+	width: 300px!important; 
+} 
+
+.sub-menu {  
+	padding-left: 0px; 
+	font-weight: 400; 
+} 
+
+.menu-item-has-children {  
+	padding: 0px 20px 0px 20px; 
+} 
+/////////////////////////////////////////
+
+
+// ----------------------------------- //
+a{
+	color:#355177;
+}
+
+@media only screen and (min-width: 1200px) { /* Extra Large */
+	.customnav {
+		margin-top: 15px !important;
+		margin-left: 100px !important;
+	}
+	.menubtns {
+		padding: 10px 16px 10px 16px; 
+
+	}
+}
+
+@media only screen and (max-width: 1199px) { /* Large */
+	.customnav {
+		margin-top: 15px !important;
+		margin-left: 0px !important ;
+	}
+	.menubtns {
+		padding: 10px 10px 10px 10px; 
+
+	}
+	#dropdownsearch {
+		width: 310px;
+		transform: translate(70px, 68px);
+	}
+}
+
+
+@media only screen and (max-width: 992px) { /* Medium */
+	.customnav {
+		margin-top: 0px !important;
+		margin-left: 0px !important ;
+	}
+	#dropdownsearch {
+		width: 310px;
+		transform: translate(0px, 0px)!important;
+	}
+}
+
+@media only screen and (max-width: 768px) { /* Small */
+	.customnav {
+		margin-top: 0px !important;
+		margin-left: 0px !important ;
+	}
+	#dropdownsearch {
+		width: 310px;
+		transform: translate(0px, 0px)!important;
+	}
+}
+
+@media only screen and (max-width: 768px) { /* Small */
+	.customnav {
+		margin-top: 0px !important;
+		margin-left: 0px !important ;
+	}
+	#dropdownsearch {
+		width: 310px;
+		transform: translate(0px, 0px);
+	}
+}
+// ----------------------------------- //
+
+#menu-footer-navigation a, #menu-contact-footer a{
+	    padding: 0px 10px 0px 10px;
+}
+#menu-contact-footer {
+	flex-direction: row;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+// ----------------------------------- //
+
+
+
+
+
+////////// ADSENSE //////////
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// )
+
+.ad-ctnr {
+	padding:0;
+	margin:.5rem auto;
+	display:none;
+	border:1px solid #ddd;
+	background-color:#f6f6f6;
+
+	&.ad-ctnr--mobile{
+		width:300px;
+		height:250px;
+/*
+		border:3px dotted #09f;
+		background-color:rgba(#09f,.1);
+		min-height:2rem;
+*/
+		@media only screen and (  max-width: map-get($grid-breakpoints, md) ) {
+			display:block !important;
+		}
+	}
+
+	&.ad-ctnr--desktop{
+		width:728px;
+		height:90px;
+/*
+		border:3px dotted #f0f;
+		background-color:rgba(#f0f,.1);
+		min-height:2rem;
+*/
+		@media only screen and (  min-width: map-get($grid-breakpoints, md) ) {
+			display:block !important;
+		}
+	}
+
+	&.ad-ctnr--dfp-in-feed-desktop{
+	}
+
+	&.ad-ctnr--dfp-in-feed-mobile{
+	}
+
+	&.ad-ctnr--dfp-header-desktop{
+	}
+
+	&.ad-ctnr--dfp-header-mobile{
+	}
+
+} // /.ad-ctnr 
+
+////////// END ADSENSE //////////
+
+
+
+.bottom-of-page-divider{
+	border:1px solid $black;
+	height:2rem;
+	background-color: $black;
+}
+
+.page-footer {
+	font-size:.8125rem;
+}
+
+
+body{
+	&.logged-in{
+		&.admin-bar{
+			#wpadminbar{
+
+				@media only screen and (  max-width: map-get($grid-breakpoints, md) ) {
+					position:fixed; // why WordPress would make it not fixed is beyond me.
+				}
+
+			}
+		}
+	} 
+}
+
+
+
+
+
